@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Swift - 雨燕（学习总结） | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Swift - 雨燕（学习总结）  一.SWift基础(一)Swift 敏捷，快速 新一代苹果平台（iOS/macOS/watchOS/tvOS）的APP及游戏开发语言。 语法与JavaScript、C#等语法类似，上手极快。  (二)历史 2014年六月推出第一个版本，有苹果员工Chris Lattern历经四年发明。 Swift已经开源，计划逐渐替代ObjectiveC，成为iOS开发的主流语">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Swift - 雨燕（学习总结）">
+<meta property="og:url" content="http://yoursite.com/2018/12/02/swift/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Swift - 雨燕（学习总结）  一.SWift基础(一)Swift 敏捷，快速 新一代苹果平台（iOS/macOS/watchOS/tvOS）的APP及游戏开发语言。 语法与JavaScript、C#等语法类似，上手极快。  (二)历史 2014年六月推出第一个版本，有苹果员工Chris Lattern历经四年发明。 Swift已经开源，计划逐渐替代ObjectiveC，成为iOS开发的主流语">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=18846030,463063725&fm=58&bpow=1200&bpoh=675">
+<meta property="og:updated_time" content="2018-12-01T20:11:34.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Swift - 雨燕（学习总结）">
+<meta name="twitter:description" content="Swift - 雨燕（学习总结）  一.SWift基础(一)Swift 敏捷，快速 新一代苹果平台（iOS/macOS/watchOS/tvOS）的APP及游戏开发语言。 语法与JavaScript、C#等语法类似，上手极快。  (二)历史 2014年六月推出第一个版本，有苹果员工Chris Lattern历经四年发明。 Swift已经开源，计划逐渐替代ObjectiveC，成为iOS开发的主流语">
+<meta name="twitter:image" content="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=18846030,463063725&fm=58&bpow=1200&bpoh=675">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-swift" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/12/02/swift/" class="article-date">
+  <time datetime="2018-12-01T19:52:09.000Z" itemprop="datePublished">2018-12-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Swift - 雨燕（学习总结）
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Swift-雨燕（学习总结）"><a href="#Swift-雨燕（学习总结）" class="headerlink" title="Swift - 雨燕（学习总结）"></a>Swift - 雨燕（学习总结）</h1><p><img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=18846030,463063725&amp;fm=58&amp;bpow=1200&amp;bpoh=675" alt></p>
+<hr>
+<h2 id="一-SWift基础"><a href="#一-SWift基础" class="headerlink" title="一.SWift基础"></a>一.SWift基础</h2><h3 id="一-Swift"><a href="#一-Swift" class="headerlink" title="(一)Swift"></a>(一)Swift</h3><ul>
+<li>敏捷，快速</li>
+<li>新一代苹果平台（iOS/macOS/watchOS/tvOS）的APP及游戏开发语言。</li>
+<li>语法与JavaScript、C#等语法类似，上手极快。</li>
+</ul>
+<h3 id="二-历史"><a href="#二-历史" class="headerlink" title="(二)历史"></a>(二)历史</h3><ul>
+<li>2014年六月推出第一个版本，有苹果员工Chris Lattern历经四年发明。</li>
+<li>Swift已经开源，计划逐渐替代ObjectiveC，成为iOS开发的主流语言。</li>
+<li>长期致力于二十年内运行到每一部智能设备上。</li>
+</ul>
+<h3 id="三-Swift的创新"><a href="#三-Swift的创新" class="headerlink" title="(三)Swift的创新"></a>(三)Swift的创新</h3><ol>
+<li>于引入Optional（可选类型）。</li>
+<li>支持传统的“面向对象编程”，提升至“面向协议编程”；即由”类“到”值“，提倡使用结构体取代类（class），”遵守协议“取代”继承“。</li>
+</ol>
+<h3 id="四-Hello-World"><a href="#四-Hello-World" class="headerlink" title="(四)Hello World"></a>(四)Hello World</h3><p><code>print(1)
+ print(&quot;hello world&quot;)</code></p>
+<h3 id="五-常量赋值"><a href="#五-常量赋值" class="headerlink" title="(五)常量赋值"></a>(五)常量赋值</h3><ul>
+<li>给常量一个名字并赋予值，也就是定义了一个常量。</li>
+<li>形式：let 常量名字 = 值（value）</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">let 女友数量 = 0</span><br><span class="line"></span><br><span class="line">let earthToSun = 1</span><br><span class="line"></span><br><span class="line">//预定义：8位整数型的区间</span><br><span class="line">Int.min...Int.max</span><br><span class="line"></span><br><span class="line">//公认：圆周率</span><br><span class="line">Double.pi</span><br></pre></td></tr></table></figure>
+<h3 id="六-变量"><a href="#六-变量" class="headerlink" title="(六)变量"></a>(六)变量</h3><ul>
+<li>可主动变更或者预期范围内不固定，比如加班时间、股票指数、驾照通过几率。</li>
+<li>定义方法： var 变量名 = 值</li>
+</ul>
+<h3 id="七-代码注释"><a href="#七-代码注释" class="headerlink" title="(七)代码注释"></a>(七)代码注释</h3><ul>
+<li>有助于自己理解</li>
+<li>便于他人理解</li>
+<li><p>专业优雅<br>//定义一个圆周率常量，精确度为小数点后2位。<br><code>let π = 3.14</code></p>
+<p>  //定义了一个武汉地区的白天电费。</p>
+<p> <code>let 电费 = 0.5</code></p>
+</li>
+</ul>
+<h3 id="八-如何正确使用常量与变量"><a href="#八-如何正确使用常量与变量" class="headerlink" title="(八)如何正确使用常量与变量"></a>(八)如何正确使用常量与变量</h3><ul>
+<li>优先使用常量</li>
+<li>由编译器来决定（报错更改）</li>
+</ul>
+<p><code>var 课程名 = &quot;三天学会Swift 3&quot;
+ print（&quot;课程名&quot;）</code></p>
+<h3 id="九-值的类型和类型推断"><a href="#九-值的类型和类型推断" class="headerlink" title="(九)值的类型和类型推断"></a>(九)值的类型和类型推断</h3><ul>
+<li>3，6，9这样的整数，在Swift中称为Int类型的值。</li>
+<li>形式：var 变量名: Int = 3 由于Swift有类型推断，类型可以省略不写</li>
+</ul>
+<p><code>var run = 5
+print(run)</code></p>
+<h3 id="十-浮点型（小数）"><a href="#十-浮点型（小数）" class="headerlink" title="(十)浮点型（小数）"></a>(十)浮点型（小数）</h3><p>*Swift 中默认浮点型十Double（双精度）</p>
+<p><code>var price = 2.5</code></p>
+<h3 id="十一-类型安全"><a href="#十一-类型安全" class="headerlink" title="(十一)类型安全"></a>(十一)类型安全</h3><ul>
+<li>变量一旦定义，其类型不可更改，即：不能给变量一个类型不同的值。</li>
+</ul>
+<h3 id="十二-布尔型：Bool，表示逻辑上的“真”或者“假”"><a href="#十二-布尔型：Bool，表示逻辑上的“真”或者“假”" class="headerlink" title="(十二)布尔型：Bool，表示逻辑上的“真”或者“假”"></a>(十二)布尔型：Bool，表示逻辑上的“真”或者“假”</h3><ul>
+<li>只有两个值，ture和false</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var win = ture</span><br><span class="line">let aa = false</span><br><span class="line">let isEmpty = true</span><br><span class="line">var svip = false</span><br><span class="line">vip = true</span><br></pre></td></tr></table></figure>
+<h3 id="十三-元祖-定义变量的一个组合"><a href="#十三-元祖-定义变量的一个组合" class="headerlink" title="(十三)元祖:定义变量的一个组合"></a>(十三)元祖:定义变量的一个组合</h3><ul>
+<li>形式（一般）：（3,”天”,”Swift”,”4”）</li>
+<li>形式（前缀）：（day：3，unit：”天”，lang:”Swift”,ver:”4”）</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">let x = 3</span><br><span class="line">let y = 4</span><br><span class="line">let z = 5</span><br><span class="line">let course = (day:3,unit:&quot;day&quot;,lang:&quot;Swift&quot;,ver:4)</span><br><span class="line"></span><br><span class="line">var course = (day:3,unit:&quot;天&quot;,lang:&quot;Swift&quot;,ver:&quot;4&quot;)</span><br></pre></td></tr></table></figure>
+<h3 id="十四-可选类型（Optional）：代表变量可能有值的情况。"><a href="#十四-可选类型（Optional）：代表变量可能有值的情况。" class="headerlink" title="(十四)可选类型（Optional）：代表变量可能有值的情况。"></a>(十四)可选类型（Optional）：代表变量可能有值的情况。</h3><ul>
+<li>如：用户资料的选填部分，如地址 性别等辅助信息。</li>
+<li>形式： var 变量：类型？，默认是无值（nil）<br><code>var wenxinyu : String?</code></li>
+</ul>
+<hr>
+<h2 id="二-基础操作符"><a href="#二-基础操作符" class="headerlink" title="二.基础操作符"></a>二.基础操作符</h2><h3 id="一-操作符简介"><a href="#一-操作符简介" class="headerlink" title="(一)操作符简介"></a>(一)操作符简介</h3><ul>
+<li>一个符号或单词，类似数学中的+ - * /</li>
+</ul>
+<h3 id="二-术语"><a href="#二-术语" class="headerlink" title="(二)术语"></a>(二)术语</h3><p><strong>操作几个对象，被称之为几元操作符。</strong></p>
+<ul>
+<li>操作一个目标，是一元操作符。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var b = 6</span><br><span class="line">let c = -b</span><br></pre></td></tr></table></figure>
+<ul>
+<li>二元操作符操作2个目标，在2个目标之间，前后用空格分隔。<br><em>3 + 6</em></li>
+</ul>
+<h3 id="三-赋值操作符"><a href="#三-赋值操作符" class="headerlink" title="(三)赋值操作符"></a>(三)赋值操作符</h3><ul>
+<li>赋予或更新一个变量<figure class="highlight plain"><figcaption><span>a </span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a = 5</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="四-数学操作符：-—"><a href="#四-数学操作符：-—" class="headerlink" title="(四)数学操作符：+ — * / %"></a>(四)数学操作符：+ — * / %</h3><h3 id="五-组合赋值操作符：赋值与数学操作符的组合，eg"><a href="#五-组合赋值操作符：赋值与数学操作符的组合，eg" class="headerlink" title="(五)组合赋值操作符：赋值与数学操作符的组合，eg.+ ="></a>(五)组合赋值操作符：赋值与数学操作符的组合，eg.+ =</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var a = 1</span><br><span class="line">a +=2</span><br><span class="line">a -=1</span><br><span class="line">a *=4</span><br><span class="line">a /=2</span><br></pre></td></tr></table></figure>
+<h3 id="六-比较操作符：-gt-gt-lt-lt-结果是true或false"><a href="#六-比较操作符：-gt-gt-lt-lt-结果是true或false" class="headerlink" title="(六)比较操作符：&gt; &gt;= &lt; &lt;=.结果是true或false"></a>(六)比较操作符：&gt; &gt;= &lt; &lt;=.结果是true或false</h3><p>1 &gt; 2 false<br>3&gt;=3 true<br>2&lt;1 false<br>2&lt;=5 true</p>
+<h3 id="七-逻辑操作符：用于表示逻辑中的“与”、“或”、“非”"><a href="#七-逻辑操作符：用于表示逻辑中的“与”、“或”、“非”" class="headerlink" title="(七)逻辑操作符：用于表示逻辑中的“与”、“或”、“非”"></a>(七)逻辑操作符：用于表示逻辑中的“与”、“或”、“非”</h3><ul>
+<li>与：每项全部为true，整体为true</li>
+</ul>
+<p><code>true &amp;&amp; true &amp;&amp; true</code></p>
+<ul>
+<li>或：有一项为true，整体为true</li>
+</ul>
+<p><code>true || false || false</code></p>
+<ul>
+<li>非：对Bool值取反</li>
+</ul>
+<p><code>let a = false 
+!a  true</code></p>
+<h2 id="三-字符串和字符"><a href="#三-字符串和字符" class="headerlink" title="三.字符串和字符"></a>三.字符串和字符</h2><h3 id="一-字符串字面量"><a href="#一-字符串字面量" class="headerlink" title="(一)字符串字面量"></a>(一)字符串字面量</h3><ul>
+<li><p>字符串字面量.  包含双引号””的值成为字符串字面量.<br>“大吉大利”</p>
+</li>
+<li><p>空字符串: 用””字面量</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var a = &quot;&quot;</span><br><span class="line">var b = &quot;   &quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>判断字符串是否为空<br>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">b.isEmpty</span><br></pre></td></tr></table></figure></p>
+</li>
+<li><p>字符串长度<br>b.count</p>
+</li>
+</ul>
+<h3 id="二-字符"><a href="#二-字符" class="headerlink" title="(二)字符"></a>(二)字符</h3><ul>
+<li>用Character类型来定义字符串.</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var eat: Character = &quot;吃&quot;</span><br><span class="line">var chicken: Character =&quot;鸡&quot;</span><br><span class="line">​</span><br></pre></td></tr></table></figure>
+<h3 id="三-连接字符串和字符"><a href="#三-连接字符串和字符" class="headerlink" title="(三)连接字符串和字符"></a>(三)连接字符串和字符</h3><ul>
+<li>用 +</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let good1 = &quot;大吉&quot;</span><br><span class="line">let good2 = &quot;大利&quot;</span><br><span class="line">var good = good1 + good2</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>向字符串添加字符, 用append方法<br><code>let dinner = &quot; 今晚吃鸡😆&quot;</code></p>
+<p><code>good.append(dinner)</code></p>
+</li>
+</ul>
+<h3 id="四-特殊字符"><a href="#四-特殊字符" class="headerlink" title="(四)特殊字符"></a>(四)特殊字符</h3><p><strong>常用半角控制字符(单斜杠 换行 单引号 双引号)</strong></p>
+<p><code>print(&quot;\\ \n  \&quot; \&#39; &quot;)</code></p>
+<p><em>Unicode: 万国码，可以使用Unicode标量表示各种字符：\u{} </em>。<a href="http://www.asahi-net.or.jp/~ax2s-kmtn/ref/unicode/cjku_klist.html" target="_blank" rel="noopener">汉字Unicode一览</a></p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&quot;\u&#123;6c49&#125;&quot;</span><br><span class="line">&quot;\u&#123;5b57&#125;&quot;</span><br></pre></td></tr></table></figure>
+<h3 id="五-多行字符串"><a href="#五-多行字符串" class="headerlink" title="(五)多行字符串"></a>(五)多行字符串</h3><h3 id="六-字符串插值"><a href="#六-字符串插值" class="headerlink" title="(六)字符串插值"></a>(六)字符串插值</h3><ul>
+<li>把常量/变量/字面量/表达式插入到字符串形成一个模板。</li>
+<li>所以也叫字符串模板(Kotlin)。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">let name = &quot;解放大官人&quot;</span><br><span class="line">let platform = &quot;斗鱼&quot;</span><br><span class="line">let rank = 1</span><br><span class="line">let game = &quot;吃鸡&quot;</span><br><span class="line">let price = 380</span><br><span class="line"></span><br><span class="line">let msg = &quot;&quot;&quot;</span><br><span class="line">\(name)在\(platform)\(game)排名第\(rank)。</span><br><span class="line">&quot;&quot;&quot;</span><br></pre></td></tr></table></figure>
+<p><strong>\ ()    括号中加内容可以调用定义好的常量或变量</strong></p>
+<h3 id="七-比较字符串"><a href="#七-比较字符串" class="headerlink" title="(七)比较字符串"></a>(七)比较字符串</h3><p>字符串和字符相等性:用 == 或 != 操作符. Unicode扩展语素组合而成的字符与正式的单个字符被视为相等.</p>
+<h3 id="八-插入和删除"><a href="#八-插入和删除" class="headerlink" title="(八)插入和删除"></a>(八)插入和删除</h3><ul>
+<li>插入一个字符 </li>
+</ul>
+<p>变量名.insert(“字符”, at: 变量名.endIndex)</p>
+<ul>
+<li>插入一个字符串 </li>
+</ul>
+<p>变量名.insert(contentsOf:变量名，at：变量名.endIndex)</p>
+<ul>
+<li>删除指定位置的字符（用removeAtIndex方法，删除字符串最后一位）</li>
+</ul>
+<p>变量名.remove(at: a.index(before: a.endIndex))</p>
+<ul>
+<li>删除一个范围的子串(用removeRange方法，删除之前添加的字符串)</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">let start = a.index(a.endIndex, offsetBy: -(b.count))</span><br><span class="line">let subRange = start..&lt;a.endIndex</span><br><span class="line"></span><br><span class="line">a.removeSubrange(subRange)</span><br></pre></td></tr></table></figure>
+<h3 id="九-字符串索引"><a href="#九-字符串索引" class="headerlink" title="(九)字符串索引"></a>(九)字符串索引</h3><h2 id="四-集合类型"><a href="#四-集合类型" class="headerlink" title="四.集合类型"></a>四.集合类型</h2><p><strong>一组同类型的值的组合，根据组合的整体特性分为：</strong></p>
+<ul>
+<li>有序可重复 - 数组（Array）</li>
+<li>无需不重复 - Set</li>
+<li>无序可重复，但每个值有唯一的键（Key）- 字典（Dictionary）</li>
+</ul>
+<p><em>批量处理集合中的元素，可以使用for in 循环</em></p>
+<h3 id="一-数组：有序可重复，用于存储同一类型的值"><a href="#一-数组：有序可重复，用于存储同一类型的值" class="headerlink" title="(一)数组：有序可重复，用于存储同一类型的值"></a>(一)数组：有序可重复，用于存储同一类型的值</h3><blockquote>
+<ol>
+<li>创建一个有默认值的数组<br><code>let array1 = Array(repeating: &quot;小姐姐&quot;, count: 30)</code></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li>创建一个整数区间内元素的数组,Array(区间)</li>
+</ol>
+</blockquote>
+<p><code>let intRangeArray = Array(-10...10)</code></p>
+<blockquote>
+<ol start="3">
+<li>用数组字面量来创建数组: [值1, 值2, …, 值N]</li>
+</ol>
+</blockquote>
+<p><code>var topLangs = &gt;[&quot;Swift&quot;,&quot;Python&quot;,&quot;Kotlin&quot;,&quot;JavaScript&quot;]</code></p>
+<ul>
+<li>①元素数:count, 空否: isEmpty<br>topLangs.count<br>topLangs.isEmpty</li>
+</ul>
+<ul>
+<li><p>②➕添加: append, 添加一个同类型数组 +=<br>topLangs.append(“php”)<br>let h5 = [“HTML”,”CSS”]<br>topLangs += h5</p>
+</li>
+<li><p>③获取元素 : 数组名[索引], ⚠️索引总是从0开始<br>topLangs[5]</p>
+</li>
+</ul>
+<ul>
+<li><p>④插入: insert<br>topLangs.insert(“React Native”, at: 1)</p>
+</li>
+<li><p>⑤移除: remove<br>topLangs.remove(at: 1)</p>
+</li>
+</ul>
+<p><strong>高阶操作①: 求和，连接元素， reduce</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">let topLangsTitle = topLangs.reduce(&quot;我最喜爱的编程语言：&quot;) &#123;</span><br><span class="line">​    $0 + &quot; &quot; + $1</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let numbers = [1,2,3,100]</span><br><span class="line">let sum = numbers.reduce(0) &#123;</span><br><span class="line">​    $0 + $1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>高阶操作②: 变形 map</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let numbersToStr = numbers.map &#123; (number) -&gt; String in</span><br><span class="line">​    return &quot;\(number)&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="二-集合（Set）：值无序不重复，适合存储具有唯一性的数据，如用户名、身份证号码、护照号等"><a href="#二-集合（Set）：值无序不重复，适合存储具有唯一性的数据，如用户名、身份证号码、护照号等" class="headerlink" title="(二)集合（Set）：值无序不重复，适合存储具有唯一性的数据，如用户名、身份证号码、护照号等"></a>(二)集合（Set）：值无序不重复，适合存储具有唯一性的数据，如用户名、身份证号码、护照号等</h3><p><code>var idcards : Set = [123,456,999,888,123,456,123]</code></p>
+<ul>
+<li>用数组字面量创建集合</li>
+</ul>
+<ul>
+<li>①元素数: count, 空否: isEmpty</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">idcards.count</span><br><span class="line">idcards.isEmpty</span><br></pre></td></tr></table></figure>
+<ul>
+<li>②插入:insert</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">idcards.insert(999)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>③移除:remove</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">idcards.remove(999)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>④是否包含某元素:contains</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">idcards.contains(123)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>⑤转换为数组:sorted</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">let idcardsArray = idcards.sorted()</span><br></pre></td></tr></table></figure>
+<ul>
+<li>集合间的运算: 交差并补</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">setdemo()</span><br></pre></td></tr></table></figure>
+<ul>
+<li>交集 intersection</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var x: Set = [1,2,3,4]</span><br><span class="line">let y: Set = [3,4,5,6]</span><br><span class="line"></span><br><span class="line">x.intersection(y)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>补集 symmetricDifference</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x.symmetricDifference(y)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>差集 subtract</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x.subtract(y)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>并集 union</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x.union(y)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>集合间的关系</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">setRelation()</span><br></pre></td></tr></table></figure>
+<ul>
+<li>相等: 两个集合有完全相同的元素.</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let i : Set = [1,2,3]</span><br><span class="line">let j : Set = [1,2,3,4]</span><br></pre></td></tr></table></figure>
+<ul>
+<li>①子集: isSubset(可以相等), 严格子集isStrictSubset</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">i.isSubset(of: j)</span><br><span class="line">i.isStrictSubset(of: j)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>②父集: isSupersetOf(可以相等), 严格父集</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">isStrictSuperSetOf</span><br><span class="line">j.isSuperset(of: i)</span><br><span class="line">j.isStrictSuperset(of: i)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>③无交集: isDisjoint</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">let youfav: Set = [&quot;game&quot;,&quot;comics&quot;]</span><br><span class="line">let girlfav: Set = [&quot;shopping&quot;,&quot;eat&quot;]</span><br></pre></td></tr></table></figure>
+<h3 id="三-字典"><a href="#三-字典" class="headerlink" title="(三)字典"></a>(三)字典</h3><p><strong>字典：值无序可重复，但每个值有唯一的键（Key</strong></p>
+<ul>
+<li>用字典字面量来创建字典, 键与值之间用冒号隔开.</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var airports = [&quot;PVG&quot;:&quot;上海浦东国际机场&quot;, &quot;CHU&quot;:&quot;周水子机场&quot;, &quot;DUB&quot;:&quot;Dublin Airport&quot;]</span><br></pre></td></tr></table></figure>
+<ul>
+<li>①计数: count, 空否: isEmpty</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">airports.count</span><br><span class="line">airports.isEmpty</span><br></pre></td></tr></table></figure>
+<ul>
+<li>②添加或更新: 字典变量[键] = 值</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">airports[&quot;SHQ&quot;] = &quot;虹桥机场&quot;</span><br><span class="line">airports[&quot;NKG&quot;] = &quot;禄口机场&quot;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>③获取,依然可以用下标</li>
+</ul>
+<p>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">* ④移除,用下标把值设为nil</span><br><span class="line"></span><br><span class="line">​```airports[&quot;NKG&quot;] = nil</span><br></pre></td></tr></table></figure></p>
+<p><a href="QQ20181201-201157.png"></a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let codes = [String](airports.keys)</span><br><span class="line">let names = [String](airports.values)</span><br></pre></td></tr></table></figure>
+<h2 id="五-控制流"><a href="#五-控制流" class="headerlink" title="五.控制流"></a>五.控制流</h2><h3 id="一-for循环"><a href="#一-for循环" class="headerlink" title="(一)for循环"></a>(一)for循环</h3><ul>
+<li>序列中的每项都参与 for 与in之间加一个代替每项的名</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">let cities = [&quot;北&quot;,&quot;上&quot;,&quot;广&quot;]</span><br><span class="line">for city in cities &#123;</span><br><span class="line">​    print(city)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var airports = [&quot;PVG&quot;:&quot;浦东机场&quot;, &quot;CHU&quot;:&quot;周水子机场&quot;, &quot;DUB&quot;:&quot;Dublin Airport&quot;]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>循环一个字典, 因为键值对有2个元素, 用元组变量.<br>for (key,value) in airports {<br>  print(key,value)<br>}</p>
+</li>
+<li><p>单独使用其中键或值,使用 keys 或 values</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for value in airports.values &#123;</span><br><span class="line">​    print(value)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="二-if和循环控制"><a href="#二-if和循环控制" class="headerlink" title="(二)if和循环控制"></a>(二)if和循环控制</h3><p><strong>根据条件不同的分支处理 .if else</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var temp = 25</span><br><span class="line"></span><br><span class="line">if temp &gt; 28 &#123;</span><br><span class="line">​    print(&quot;开空调&quot;)</span><br><span class="line">&#125; else &#123;</span><br><span class="line">​    print(&quot;关空调&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><em>(同C语言类似)</em></p>
+<ul>
+<li>循环中的判断</li>
+<li><strong>continue结束本次循环，break结束整个循环</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">for i in 1...100 &#123;</span><br><span class="line">​    if i == 3 &#123;</span><br><span class="line">​        break</span><br><span class="line">​    &#125;</span><br><span class="line">​    print(i)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="三-Switch"><a href="#三-Switch" class="headerlink" title="(三)Switch"></a>(三)Switch</h3><ul>
+<li>SWitch语句：超过两个以上条件判断的场合，支持各种匹配条件。</li>
+</ul>
+<ol>
+<li>范围匹配：如根据室外温度来自动调节室内温度的空调。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var temp = 39</span><br><span class="line"></span><br><span class="line">switch temp &#123;</span><br><span class="line">case 35...42:</span><br><span class="line">​    print(&quot;强力制冷&quot;)</span><br><span class="line">case 25...34:</span><br><span class="line">​    print(&quot;Normal cool&quot;)</span><br><span class="line">case 18...24:</span><br><span class="line">​    print(&quot;wet fitler&quot;)</span><br><span class="line">case 0...17:</span><br><span class="line">​    print(&quot;warm mode&quot;)</span><br><span class="line">default:</span><br><span class="line">​    print(&quot;not working&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="六-函数、闭包和高阶函数"><a href="#六-函数、闭包和高阶函数" class="headerlink" title="六.函数、闭包和高阶函数"></a>六.函数、闭包和高阶函数</h2><h3 id="一-定义函数和使用函数"><a href="#一-定义函数和使用函数" class="headerlink" title="(一)定义函数和使用函数"></a>(一)定义函数和使用函数</h3><ul>
+<li>常规定义</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">func add(x: Int, y: Int) -&gt; Int &#123;</span><br><span class="line">​    return x + y</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var a = add(x: 1, y: 2)</span><br><span class="line">let b = add(x: -1, y: -2)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>变量式定义，也叫闭包表达式</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var jiafa = &#123; (x: Int, y: Int) -&gt; Int in</span><br><span class="line">    return x + y</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">jiafa(1,2)</span><br></pre></td></tr></table></figure>
+<h3 id="二-参数和返回值"><a href="#二-参数和返回值" class="headerlink" title="(二)参数和返回值"></a>(二)参数和返回值</h3><ul>
+<li>无参数无返回值</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">func welcome1() &#123;</span><br><span class="line">​    print(&quot;Welcome&quot;)</span><br><span class="line">​    print(&quot;learn Swift 4!&quot;)</span><br><span class="line">​    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>多返回值（使用元祖）</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">func maxMin() -&gt; (Int, Double) &#123;</span><br><span class="line">​    return (Int.max, 0.0)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>可以给某个参数以默认值</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">func add2(x: Int, increment: Int = 2) -&gt; Int &#123;</span><br><span class="line">​    return x + increment</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="三-高阶函数"><a href="#三-高阶函数" class="headerlink" title="(三)高阶函数"></a>(三)高阶函数</h3><ul>
+<li>既然函数可以写成变量，那也可以当类型来使用。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">func jisuan(x: Int, y: Int, method: (Int,Int) -&gt; Int) -&gt; Int &#123;</span><br><span class="line">​    return method(x, y)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func add(x: Int, y: Int) -&gt; Int &#123;</span><br><span class="line">​    return x + y</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func multipy(x : Int, y: Int) -&gt; Int &#123;</span><br><span class="line">​    return x * y</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let z = jisuan(x: 9, y: 3, method: add)</span><br><span class="line">let u = jisuan(x: 9, y: 3, method: multipy)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>闭包写法</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let b = jisuan(x: 9, y: 3) &#123; (x, y) -&gt; Int in</span><br><span class="line">​    return x * y</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>闭包中的默认参数名</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">let c = jisuan(x: 9, y: 3) &#123; $0 / $1 &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="七-枚举（Enumeration）"><a href="#七-枚举（Enumeration）" class="headerlink" title="七.枚举（Enumeration）"></a>七.枚举（Enumeration）</h2><ul>
+<li><strong>计数、列举（有限的情况）；详细叙述之意。“增强的、更抽象型”的数字类型。</strong></li>
+<li><strong>非常强大，与switch语句结合使用，天生一对。</strong></li>
+</ul>
+<ol>
+<li>定义和使用：</li>
+</ol>
+<p>*给定一个名称，然后把每一种情况列举出来。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">enum Weather &#123;</span><br><span class="line">​    case sunny, cloudy, rainy, snowy, froggy</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>使用：点语法</li>
+</ul>
+<p>let todayWeather = Weather.snowy</p>
+<ul>
+<li>与switch配合使用。如果变量是枚举值，可省略枚举名。如果switch语句不列举枚举类型的所有情况，则必须要有default语句来处理其他情况。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">switch todayWeather &#123;</span><br><span class="line">case .sunny:</span><br><span class="line">​    print(&quot;艳阳高照，宜出门旅行&quot;)</span><br><span class="line">case .cloudy:</span><br><span class="line">​    print(&quot;阴天，回房间吧&quot;)</span><br><span class="line">default:</span><br><span class="line">​    print(&quot;天气不对！&quot;)</span><br><span class="line">​    break</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>附加值：每一种类型都可附加一个或多个值，形式是元组。case类型（Int，String）</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">enum WeatherDetail &#123;</span><br><span class="line">​    case lifeIndex(Int, Int, String)</span><br><span class="line">​    case pmIndex(String, Int)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>赋予附加值：加上元组字面量。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let weatherDetailToday = WeatherDetail.lifeIndex(20, 30, &quot;绥化&quot;)</span><br><span class="line">let wetherDetailTomorrow = WeatherDetail.pmIndex(&quot;2.5&quot;, 120)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>取得附加值：用switch语句，在case中加上元组变量。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">switch wetherDetailTomorrow &#123;</span><br><span class="line">case .lifeIndex(let uv, let li, let city):</span><br><span class="line">​    print(&quot;紫外线:\(uv),晾晒指数:\(li),推荐出行地： \(city)&quot;)</span><br><span class="line">case .pmIndex(let category, let index):</span><br><span class="line">​    print(&quot;PM\(category)指数为：\(index)&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="八-面向对象"><a href="#八-面向对象" class="headerlink" title="八.面向对象"></a>八.面向对象</h2><ul>
+<li><strong>面向过程式的编程，在1960年左右的大型程序时遇到不少瓶颈和问题。</strong></li>
+<li><strong>此后的高级语言，开始借鉴面向对象的思维方式，发展到今天更加完善。</strong></li>
+<li><strong>面向对象主要从生物的特征、行为、繁殖、代差几个方面来思考。</strong></li>
+<li><strong>Swift中，类（class）、结构体（struct）、枚举（enum）都有面向对象功能。</strong></li>
+</ul>
+<p>比如一只可爱的小黄鸭，有毛色、会划水，长大之后毛色会变。小黄鸭祖类（野鸭），亲戚类（鸳鸯）。</p>
+<h3 id="一-初始化、构造器"><a href="#一-初始化、构造器" class="headerlink" title="(一)初始化、构造器"></a>(一)初始化、构造器</h3><ul>
+<li>一个雷必须给具体的值才能起作用，这叫初始化或实例化。</li>
+<li>构造器：一个类的初始化方法。属性：一个类的“特征”。方法：一个类的“行为”。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">class Duck &#123;</span><br><span class="line">​    var color : String</span><br><span class="line">​    var foot : Int</span><br><span class="line">​    </span><br><span class="line">​    init(color: String, foot: Int) &#123;</span><br><span class="line">​        self.color = color</span><br><span class="line">​        self.foot = foot</span><br><span class="line">​    &#125;</span><br><span class="line">​    </span><br><span class="line">    func growUp(color: String)  &#123;</span><br><span class="line">        self.color = color</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>1.生成了一只鸭，叫初始化。duck1是一个实例。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let duck1 = Duck(color: &quot;yellow&quot;, foot: 2)</span><br><span class="line">duck1.growUp(color: &quot;white&quot;)</span><br></pre></td></tr></table></figure>
+<p>2.如果给属性值，会生成一个默认的构造器init()，初始化时不能更改属性值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">class DuckGreen &#123;</span><br><span class="line">​    var color = &quot;Green&quot;</span><br><span class="line">​    var foot = 2</span><br><span class="line">&#125;</span><br><span class="line">let duck2 = DuckGreen()</span><br></pre></td></tr></table></figure>
+<p>3.结构体只需声明属性，构造器系统自动生成！</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">struct DuckRed &#123;</span><br><span class="line">​    var color = &quot;Red&quot;</span><br><span class="line">​    var foot = 2</span><br><span class="line">&#125;</span><br><span class="line">let duck3 = DuckRed()</span><br><span class="line">let duck4 = DuckRed(color: &quot;Deep Red&quot;, foot: 2</span><br></pre></td></tr></table></figure>
+<h3 id="二-继承、重载和计算属性"><a href="#二-继承、重载和计算属性" class="headerlink" title="(二)继承、重载和计算属性"></a>(二)继承、重载和计算属性</h3><ul>
+<li>类可以被继承。子类可以修改父类中的属性和方法，<strong>结构体和枚举不能继承。</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">class Duck &#123;</span><br><span class="line">​    var color : String</span><br><span class="line">​    var foot : Int</span><br><span class="line">​    </span><br><span class="line">​    init(color: String, foot: Int) &#123;</span><br><span class="line">​        self.color = color</span><br><span class="line">​        self.foot = foot</span><br><span class="line">​    &#125;</span><br><span class="line">​    </span><br><span class="line">    func growUp(color: String)  &#123;</span><br><span class="line">        self.color = color</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>鸳鸯继承了鸭子的所有属性和方法</li>
+</ul>
+<p><code>class MandarinDuck: Duck {</code><br>​    </p>
+<ul>
+<li>增加了属性</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var lovers = 0</span><br><span class="line">var name = &quot;鸳鸯&quot;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>可以更改父类中的方法</p>
+<p> <code>override func growUp(color: String) {</code>      </p>
+</li>
+<li><p>调用父类的方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> super.growUp(color: color)</span><br><span class="line"> self.lovers = 1</span><br><span class="line"> print(&quot;鸳鸯长大了！有了\(self.lovers)个伴侣！&quot;)</span><br><span class="line">​    &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>计算属性：由其他属性间接得出(set),也可以影响其他属性(set)。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var desc : String &#123;</span><br><span class="line">​        get &#123;</span><br><span class="line">​            return &quot;\(self.name)是一种中国特有的鸭子种类，一生只有钟情于一个伴侣。&quot;</span><br><span class="line">​        &#125;</span><br><span class="line">​    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let duck1 = MandarinDuck(color: &quot;gray&quot;, foot: 2)</span><br><span class="line">duck1.growUp(color: &quot;Rainbow&quot;)</span><br><span class="line">print(duck1.desc)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="九-错误处理"><a href="#九-错误处理" class="headerlink" title="九.错误处理"></a>九.错误处理</h2><p><strong>错误处理：反映运行出错的“细节”，并恢复程序的过程。</strong></p>
+<ul>
+<li>可选类型（Optional）值处理值缺失的情况，错误处理可以针对不同的出错原因对不同的应对。</li>
+</ul>
+<ol>
+<li>一个函数可以加上thorws关键字，表示可以处理错误，这个函数的调用者可以捕获（catch）这个错误并进行应对。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">func learning() throws &#123;</span><br><span class="line">​    print(&quot;3天学会Swift 4&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>2.当你调用可以抛出错误的函数，需在前面加上try关键字。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">try learning()</span><br></pre></td></tr></table></figure>
+<ul>
+<li>处理更细分的错误情况，错误类型须遵从Error协议。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">enum LearningError: Error &#123;</span><br><span class="line">​    case noWay, dislikeReading, lack(tool: String)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func iosDev(hasWay: Bool, byReading: Bool, hasTool: Bool) throws &#123;</span><br><span class="line">​    guard hasWay else &#123;</span><br><span class="line">​        throw LearningError.noWay</span><br><span class="line">​    &#125;</span><br><span class="line">​    </span><br><span class="line">​    guard byReading else &#123;</span><br><span class="line">​        throw LearningError.dislikeReading</span><br><span class="line">​    &#125;</span><br><span class="line">​    </span><br><span class="line">    guard hasTool else &#123;</span><br><span class="line">        throw LearningError.lack(tool: &quot;Mac book电脑&quot;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var funds = 7000</span><br><span class="line"></span><br><span class="line">func buy(_ tool:String) &#123;</span><br><span class="line">​    if funds &gt;= 6000 &#123;</span><br><span class="line">​        funds -= 6000</span><br><span class="line">​        print(&quot;您已经采购&quot;,tool,&quot;花费6000元,余额&quot;,funds)</span><br><span class="line">​    &#125; else &#123;</span><br><span class="line">​        print(&quot;资金不足！&quot;)</span><br><span class="line">​    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">do &#123;</span><br><span class="line">​    try iosDev(hasWay: true, byReading: true, hasTool: false)</span><br><span class="line">​    print(&quot;迈出Swift学习第一步！&quot;)</span><br><span class="line">&#125; catch LearningError.noWay &#123;</span><br><span class="line">​    print(&quot;找小波&quot;)</span><br><span class="line">&#125; catch LearningError.dislikeReading &#123;</span><br><span class="line">​    print(&quot;看视频学习&quot;)</span><br><span class="line">&#125; catch LearningError.lack(let mac) &#123;</span><br><span class="line">​    buy(mac)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>有时候仅关心结果有误，可使用 try？来忽略错误细节。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> if let _ = try? iosDev(hasWay: true, byReading: false, hasTool: true) &#123;</span><br><span class="line">​    print(&quot;恭喜您已经开始学习！&quot;)</span><br><span class="line">&#125; else &#123;</span><br><span class="line">​    print(&quot;条件不足，无法学习&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>try！强制执行可能会出错的方法，如果出错，则程序崩溃。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">try! iosDev(hasWay: true, byReading: true, hasTool: true)</span><br></pre></td></tr></table></figure>
+<h2 id="十-协议"><a href="#十-协议" class="headerlink" title="十.协议"></a>十.协议</h2><p><strong>协议：方法、属性或一段功能的蓝本。</strong></p>
+<ul>
+<li>任意类型都可以“领养”协议，从而实现蓝本；也称“遵从”该协议。</li>
+<li>Swift的特色：面向协议编程，鼓励多“领养”协议来替代类继承、因为“领养”的代价元低于继承。</li>
+</ul>
+<p>1.两个空协议</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">protocol a &#123;&#125;</span><br><span class="line">protocol b &#123;&#125;</span><br></pre></td></tr></table></figure>
+<p>2.“领养/遵从”若干个协议，要用逗号隔开</p>
+<p><code>struct c: a, b{}</code></p>
+<p>3.如果同时有继承和遵从协议，协议写在父类之后。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">class father&#123;&#125;</span><br><span class="line">class son: father,a,b&#123;&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="一-属性协议"><a href="#一-属性协议" class="headerlink" title="(一)属性协议"></a>(一)属性协议</h3><p><em>属性协议：遵从这要实现协议规定的属性。</em></p>
+<p><strong>属性必须定义为变量。setter可选实现。</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">protocol Nameable &#123;</span><br><span class="line">​    var nick: String &#123; get &#125;</span><br><span class="line">​    var title : String &#123; get &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">enum Grade &#123;</span><br><span class="line">​    case primary, middle</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>遵从属性协议：必须要实现其规定的属性。</li>
+</ul>
+<p><a href="https://i.loli.net/2018/12/02/5c0348914e2b8.png" target="_blank" rel="noopener"></a></p>
+<ul>
+<li>把名字相关属性从student分离</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">struct Teacher: Nameable &#123;</span><br><span class="line">​    var nick: String</span><br><span class="line">​    var title: String &#123;</span><br><span class="line">​        return nick + &quot;老师&quot;</span><br><span class="line">​    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let wanglaoshi = Teacher(nick: &quot;老王&quot;)</span><br><span class="line">wanglaoshi.title</span><br></pre></td></tr></table></figure>
+<h3 id="二-方法协议"><a href="#二-方法协议" class="headerlink" title="(二)方法协议"></a>(二)方法协议</h3><p>方法协议：定义时没有花括号执行体，实现仅要求名称相同。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">protocol Randomable &#123;</span><br><span class="line">​    func number() -&gt; Int</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">import Foundation</span><br><span class="line"></span><br><span class="line">struct Dice: Randomable &#123;</span><br><span class="line">​    func number() -&gt; Int &#123;</span><br><span class="line">​        return Int(arc4random()) % 6 + 1</span><br><span class="line">​    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let dice1 = Dice()</span><br><span class="line"></span><br><span class="line">for _ in 1...30 &#123;</span><br><span class="line">​    print(dice1.number())</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="三-多重继承"><a href="#三-多重继承" class="headerlink" title="(三)多重继承"></a>(三)多重继承</h3><p>协议继承：一个协议可以继承若干个协议，并可以在继承基础上增加新需求。（面向协议编程）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">protocol Nameable &#123;</span><br><span class="line">​    var name : String &#123; get &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">protocol Ageable &#123;</span><br><span class="line">​    var age : Int &#123; get &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">protocol LegalCitizen: Nameable, Ageable &#123;</span><br><span class="line">​    var idcardNumber: Int &#123; get &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">struct Coder: LegalCitizen &#123;</span><br><span class="line">​    var name: String</span><br><span class="line">​    var age: Int</span><br><span class="line">​    var idcardNumber: Int</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="四-协议作为类型使用"><a href="#四-协议作为类型使用" class="headerlink" title="(四)协议作为类型使用"></a>(四)协议作为类型使用</h3><p>协议作为类型使用：可用于参数类型/返回类型；变量/常量/属性；常量类型中的元素类型</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">protocol Demo &#123;</span><br><span class="line">​    func showType()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">struct A: Demo &#123;</span><br><span class="line">​    func showType() &#123;</span><br><span class="line">​        print(&quot;struct A&quot;)</span><br><span class="line">​    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class B: Demo &#123;</span><br><span class="line">​    func showType() &#123;</span><br><span class="line">​        print(&quot;class b&quot;)</span><br><span class="line">​    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let a = A()</span><br><span class="line">let b = B()</span><br><span class="line"></span><br><span class="line">let arrayDemo: [Demo] = [a, b]</span><br></pre></td></tr></table></figure>
+<h2 id="十一-扩展"><a href="#十一-扩展" class="headerlink" title="十一.扩展"></a>十一.扩展</h2><p><strong>扩展：为既有类型添加新的功能，及时无权查看源代码（也叫：追加建模）</strong></p>
+<p><em>范围：扩展计算属性，方法（包括构造器、下标）；扩展嵌套类型；扩展协议。</em></p>
+<ul>
+<li>一种分离代码的“模式”：如果一个类其中的属性和方法过多（iOS开发中通常ViewController代码量很大），应当考虑把代码分离。写成扩展是一种很直接的方式。</li>
+</ul>
+<h3 id="一-扩展计算属性。"><a href="#一-扩展计算属性。" class="headerlink" title="(一)扩展计算属性。"></a>(一)扩展计算属性。</h3><p>Ps：只能扩展计算属性。<strong>存储</strong>属性一旦定义好，就无法再增加。</p>
+<ul>
+<li>给Double类型扩展计算属性（米为基准）：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">extension Double &#123;</span><br><span class="line">​    var km: Double &#123; return self / 1_000.0 &#125;</span><br><span class="line">​    var m: Double &#123; return self &#125;</span><br><span class="line">​    var cm: Double &#123; return self * 100.0 &#125;</span><br><span class="line">​    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var dailyRunning = 1000.0</span><br><span class="line">dailyRunning.km</span><br><span class="line"></span><br><span class="line">var mountainEverest = 8848.8</span><br><span class="line">mountainEverest.km</span><br><span class="line"></span><br><span class="line">var height = 1.72</span><br><span class="line">height.cm</span><br></pre></td></tr></table></figure>
+<h3 id="二-扩展方法"><a href="#二-扩展方法" class="headerlink" title="(二)扩展方法"></a>(二)扩展方法</h3><ul>
+<li>扩展方法：为既有类型添加方法</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">extension Int &#123;</span><br><span class="line">​    func repeatDo(closure: () -&gt; Void) &#123;</span><br><span class="line">​        for _ in 1...self &#123;</span><br><span class="line">​            closure()</span><br><span class="line">​        &#125;</span><br><span class="line">​    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">4.repeatDo &#123;</span><br><span class="line">​    print(&quot;3天学会Swift 4 之扩展&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>如果方法要结合修改结构体（或枚举）实例的属性时，要加mutating关键字。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">extension Int &#123;</span><br><span class="line">​    mutating func square() &#123;</span><br><span class="line">​        self *= self</span><br><span class="line">​    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var a = 3</span><br><span class="line">a.square</span><br></pre></td></tr></table></figure>
+<h3 id="三-扩展协议"><a href="#三-扩展协议" class="headerlink" title="(三)扩展协议"></a>(三)扩展协议</h3><p>扩展协议：让既有类型遵从协议。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">struct w&#123;</span><br><span class="line">var a: String</span><br><span class="line">var b: Double</span><br><span class="line">var c: Int</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">protocol A&#123;&#125;</span><br><span class="line">protocol B&#123;&#125;</span><br><span class="line">extension a:A,B&#123;&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="十二-泛型"><a href="#十二-泛型" class="headerlink" title="十二.泛型"></a>十二.泛型</h2><ul>
+<li>泛型：“范”指通用、普遍。现代编程必不可少的组成部分。</li>
+<li>数组和字典都是“泛型”集合。可以使Int，String，或者任何其他任何类型，无任何类型的限制。</li>
+<li>print函数可以打印任意类型。</li>
+</ul>
+<p><strong>打印不同类型的数组</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">let topLangs = [&quot;Swift&quot;, &quot;Kotlin&quot;, &quot;Javascript&quot;]</span><br><span class="line">let odds = [1, 3, 5]</span><br><span class="line">let machConstants = [3.141, 1.414, 2.718]</span><br><span class="line"></span><br><span class="line">func printString(array:[String]) &#123;</span><br><span class="line">​    for e in array &#123;</span><br><span class="line">​        print(e)</span><br><span class="line">​    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func printInt(array: [Int]) &#123;</span><br><span class="line">​    for e in array &#123;</span><br><span class="line">​        print(e)</span><br><span class="line">​    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func printDouble(array: [Double]) &#123;</span><br><span class="line">​    for e in array &#123;</span><br><span class="line">​        print(e)</span><br><span class="line">​    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="一-泛型函数：让参数由单一类型，扩展成“广泛的”类型"><a href="#一-泛型函数：让参数由单一类型，扩展成“广泛的”类型" class="headerlink" title="(一)泛型函数：让参数由单一类型，扩展成“广泛的”类型"></a>(一)泛型函数：让参数由单一类型，扩展成“广泛的”类型</h3><p><strong>用一个占位符，取代原具体类型，函数名后紧跟&lt;占位符&gt;。占位符可以是任意变量名。</strong></p>
+<p><em>打印任意类型数组的全部元素</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">func printAny&lt;placeHolder&gt;(array: [placeHolder]) &#123;</span><br><span class="line">​    for element in array &#123;</span><br><span class="line">​        print(element)</span><br><span class="line">​    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">printAny(array: [1, 3, 5])</span><br><span class="line">printAny(array: [3.141, 1.414, 2.718])</span><br><span class="line">printAny(array: [&quot;Swift&quot;, &quot;Kotlin&quot;, &quot;Javascript&quot;])</span><br></pre></td></tr></table></figure>
+<h3 id="二-泛型参数：上述例子中的占位符，作为取代类型的参数使用。"><a href="#二-泛型参数：上述例子中的占位符，作为取代类型的参数使用。" class="headerlink" title="(二)泛型参数：上述例子中的占位符，作为取代类型的参数使用。"></a>(二)泛型参数：上述例子中的占位符，作为取代类型的参数使用。</h3><p><em>泛型参数紧跟函数名之后，用尖括号包含，如：&lt;类型占位符&gt;</em></p>
+<p><em>一旦定义了类型参数，即可用作 参数类型/函数返回类型/函数体重做类型标识。</em></p>
+<p><em>无论何时函数被条用时，类型参数就被实际的类型取代。可以定义任何多类型参数，&lt;占位符1，占位符2，…&gt;</em></p>
+<p><em>命名：尽量顾名思义，比如 Dictionary&lt;Key,Value&gt;,Array<element>,如无明显关联，可用如T、U、V等替代。</element></em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">func printAny&lt;T&gt;(array: [T]) &#123;</span><br><span class="line">​    for element in array &#123;</span><br><span class="line">​        print(element)</span><br><span class="line">​    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="三-泛型类型"><a href="#三-泛型类型" class="headerlink" title="(三)泛型类型"></a>(三)泛型类型</h3><p>泛型类型：泛型不仅用于函数，也可以用于类型定义中。比如：一个适应任何类型参数的类、结构体、枚举等，就像数组和字典一样。</p>
+<ul>
+<li>创建一个类型：Stack（堆）</li>
+<li>堆使用规则：后进（push）先出（pop）</li>
+<li>压一个值进堆顶，作为后进的值。</li>
+<li>堆顶的值可以被推出。</li>
+</ul>
+<p><strong>Int堆</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">struct IntStack &#123;</span><br><span class="line">​    var items = [Int]()</span><br><span class="line">​    </span><br><span class="line">​    mutating func push(item: Int) &#123;</span><br><span class="line">​        items.append(item)</span><br><span class="line">​    &#125;</span><br><span class="line">​    </span><br><span class="line">    mutating func pop() -&gt;Int &#123;</span><br><span class="line">        return items.removeLast()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>泛型Stack</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">struct Stack&lt;T&gt; &#123;</span><br><span class="line">    var items = [T]()</span><br><span class="line">    </span><br><span class="line">    mutating func push(item: T) &#123;</span><br><span class="line">        items.append(item)</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    mutating func pop() -&gt; T &#123;</span><br><span class="line">        return items.removeLast()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var topLang = Stack&lt;String&gt;()</span><br><span class="line">topLang.push(item: &quot;Swift&quot;)</span><br><span class="line">topLang.push(item: &quot;Kotlin&quot;)</span><br><span class="line">topLang.push(item: &quot;Javascript&quot;)</span><br><span class="line">topLang.push(item: &quot;Python&quot;)</span><br><span class="line"></span><br><span class="line">let thisYearTop = topLang.pop()</span><br><span class="line"></span><br><span class="line">topLang</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/12/02/swift/" data-id="cjufkk9sz000477wsh3qvrbs1" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/04/13/a/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          a
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/11/17/zhixiangshu/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">致橡树</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/04/13/b/">b</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/13/a/">a</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/02/swift/">Swift - 雨燕（学习总结）</a>
+          </li>
+        
+          <li>
+            <a href="/2018/11/17/zhixiangshu/">致橡树</a>
+          </li>
+        
+          <li>
+            <a href="/2018/11/17/1/">Git学习总结</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
