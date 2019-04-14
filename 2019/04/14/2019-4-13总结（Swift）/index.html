@@ -15,15 +15,20 @@
   </script>
 
   
-  <title>Archives: 2018/12 | Wenxinyu</title>
+  <title>2019.4.13总结（Swift） | Wenxinyu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Wenxinyu">
-<meta property="og:url" content="http://yoursite.com/archives/2018/12/index.html">
+  <meta name="description" content="遇到的问题   在开发中遇到了[library not found for]报错，百度之后重新install了此库，无法解决，又找到了另一个解决方法，即改变根目录文件，还是无法解决。最终找到问题所在是因为缺少了xcworkspace文件导致。  解决办法：先cd进入project所在目录，然后输入ls -a命令回车，然后输入vim podfile命令然后回车。能够看到里面有此库。然后：输入wq 点">
+<meta name="keywords" content="总结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2019.4.13总结（Swift）">
+<meta property="og:url" content="http://yoursite.com/2019/04/14/2019-4-13总结（Swift）/index.html">
 <meta property="og:site_name" content="Wenxinyu">
+<meta property="og:description" content="遇到的问题   在开发中遇到了[library not found for]报错，百度之后重新install了此库，无法解决，又找到了另一个解决方法，即改变根目录文件，还是无法解决。最终找到问题所在是因为缺少了xcworkspace文件导致。  解决办法：先cd进入project所在目录，然后输入ls -a命令回车，然后输入vim podfile命令然后回车。能够看到里面有此库。然后：输入wq 点">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-04-14T05:00:00.379Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Wenxinyu">
+<meta name="twitter:title" content="2019.4.13总结（Swift）">
+<meta name="twitter:description" content="遇到的问题   在开发中遇到了[library not found for]报错，百度之后重新install了此库，无法解决，又找到了另一个解决方法，即改变根目录文件，还是无法解决。最终找到问题所在是因为缺少了xcworkspace文件导致。  解决办法：先cd进入project所在目录，然后输入ls -a命令回车，然后输入vim podfile命令然后回车。能够看到里面有此库。然后：输入wq 点">
   
     <link rel="alternate" href="/atom.xml" title="Wenxinyu" type="application/atom+xml">
   
@@ -101,106 +106,110 @@
 
   <div id="main-wrap" class="position-relative" style="margin-top: 55px;">
       <div class="main-inner-content">
-          <style>
-    .post-hover:hover {
-        box-shadow: inset 0 0 100px #000;
-        transition: box-shadow .2s;
-    }
+          <!--博文页面-->
 
-    .sub-post-container .post-hover:hover h3 {
-        text-decoration: underline gray;
-    }
-
-
-    .primary-item-main {
-        height: 330px;
+<style>
+    .header-box {
+        height: 370px;
+        filter: blur(10px);
         background-size: cover;
+        background-color: lightsteelblue;
     }
 
-    .primary-container .title,
-    .primary-container .sub-title,
-    .primary-container .post-content-text,
-    .primary-container .date {
-        color: #fff;
+    .post-box {
+        padding: 15px;
+        padding-top: 60px;
+        min-height: 80vh;
+        margin-top: -200px;
+        border-radius: 4px;
+        background-color: rgba(255,255,255,.8);
     }
 
-    .post-content-text {
-        color: #f1f1f1!important;
+    .post-avatar {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
     }
 
-    .primary-container .post-hover {
-        background: black;
+    .flow-chart {
+        text-align: center;
     }
 
-    .content-bg-mask {
-        background: rgba(0,0,0,.4);
+    img[alt="post-cover"] {
+        display: none;
     }
-
 </style>
-
-<div style="background: #f5f8f9;">
-    <div id="main-container" class="container" style="padding-top: 20px;">
-        <div class="is-flex main-content justify-center">
-            <section class="column is-9">
-                
-<div class="primary-container content-box is-flex-desktop clear-padding bottom-line" style="margin-bottom: 25px;">
-    <div class="column  is-12">
-        <a href="/2018/12/02/swift/">
-            <div class="full-height post-hover" style="
-                         background-image: url('https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=18846030,463063725&amp;fm=58&amp;bpow=1200&amp;bpoh=675');
-                         height: 350px;
-                         background-size: cover;
-                         background-repeat: no-repeat;
-                         ">
-                    <div class=" is-flex flex-column center content has-text-centered full-height has-padding content-bg-mask">
-                        <h1 class="title text-shadow" style="margin-bottom: 15px;">
-                            Swift - 雨燕（学习总结）
-                        </h1>
-                        <div>
-                        
-                            
-                        
-                        </div>
-                        <p class="post-content-text is-marginless has-padding text-shadow">
-                            Swift - 雨燕（学习总结）
-
-一.SWift基础(一)Swift
-敏捷，快速
-新一代苹果平台（iOS/macOS/watchOS/tvOS）的APP及游戏开发语言。
-语法与JavaScript、C#等语法类似，上手极快。
-
-(二)..
-                        </p>
-                        <p class="date text-shadow">2018-12-02</p>
-                        <button class="button is-info is-small">Read More</button>
-                    </div>
+<header>
+    <div id="header_box" class="header-box"></div>
+</header>
+<section>
+    <div class="container post-box">
+        <div class="content post-title is-flex center flex-column" style="margin-bottom: 70px; overflow: auto;">
+            <h1 class="has-text-centered" style="padding-bottom: 10px; border-bottom: 3px solid #fff">
+                <strong>2019.4.13总结（Swift）</strong>
+            </h1>
+            
+            <div class="is-flex align-center">
+                <img class="post-avatar" src="https://cdn2.iconfinder.com/data/icons/rcons-user/32/male-shadow-circle-512.png">
+                <span style="padding:0 10px;"> <span class="sub-title">By</span> Wenxinyu</span>
+                <span class="post-date sub-title">at: 2019-04-14</span>
             </div>
-        </a>
-    </div>
-    <div class="column is-5 is-hidden-touch" style="padding-left: 0;">
-        <div class="full-height is-flex flex-column justify-space-between" style="min-height: 350px;">
             
+                <div>
+                    
+                         <a class="tag is-post-tag" href="/tags/总结/">总结</a>
+                    
+                </div>
             
         </div>
-    </div>
-    <div class="column is-12 is-hidden-desktop">
-        
-        
-    </div>
-</div>
+        <div class="content" style="overflow: auto">
+            <h1 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h1><p>   在开发中遇到了[library not found for]报错，百度之后重新install了此库，无法解决，又找到了另一个解决方法，即改变根目录文件，还是无法解决。最终找到问题所在是因为缺少了xcworkspace文件导致。</p>
+<ul>
+<li>解决办法：先cd进入project所在目录，然后输入<strong>ls -a</strong>命令回车，然后输入<strong>vim podfile</strong>命令然后回车。能够看到里面有此库。然后：输入wq 点击回车，保存退出。输入<strong>pod install</strong>命令回车，最后输入<strong>pod install –verbose –no-repo-update</strong></li>
+</ul>
 
-                    
-                    
-                
-                <!--翻頁-->
-                <nav class="pagination is-flex" style="justify-content: flex-end">
-                    
-                </nav>
-            </section>
+        </div>
+        <div class="post-reply">
+            
+                <!-- 来必力City版安装代码 -->
+                <div id="lv-container" data-id="city" data-uid="MTAyMC8yOTE4Ni81NzUz">
+                    <script type="text/javascript">
+                        (function(d, s) {
+                            var j, e = d.getElementsByTagName(s)[0];
+
+                            if (typeof LivereTower === 'function') { return; }
+
+                            j = d.createElement(s);
+                            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                            j.async = true;
+
+                            e.parentNode.insertBefore(j, e);
+                        })(document, 'script');
+                    </script>
+                    <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+                </div>
+                <!-- City版安装代码已完成 -->
+            
             
         </div>
     </div>
-</div>
+</section>
+<script>
+    // 获取第一张图, 用以当封面背景图
+    var img = document.querySelectorAll('img')[1]
+
+    if (img) {
+        var header_box = document.querySelector('#header_box')
+        header_box.style.backgroundImage = 'url('+ img.src +')'
+    }
+</script>
+
+<!-- for code block highlight --> 
+<!-- theme.block_highlight -->
+<!-- we do not guarantee the char sequences spell right, usr himself do it -->
+<link rel="stylesheet" href="/css/highlight_rainbow.css">
+<script src="/js/highlight.min.js"></script>
+<script type="text/javascript"> hljs.initHighlightingOnLoad();</script>
 
       </div>
   </div>
